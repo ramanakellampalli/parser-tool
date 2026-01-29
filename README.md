@@ -24,25 +24,33 @@ Paste any curl command (single-line or multi-line with \ continuations) on the l
 
 ### Recommended: Using a virtual environment
 
-1. Clone or download the project:
-   git clone https://github.com/yourusername/parser-tool.git
+1. Clone or download the project (if you haven't already):
+   ```bash
+   git clone https://github.com/ramanakellampalli/parser-tool.git
    cd parser-tool
 
 2. Create and activate a virtual environment:
-   python3 -m venv venv
-   source venv/bin/activate          # On Windows: venv\Scripts\activate
+    ```bash
+    # macOS / Linux
+    python3 -m venv venv
+    source venv/bin/activate
+
+    # Windows (Command Prompt or PowerShell)
+    python -m venv venv
+    venv\Scripts\activate
 
 3. Install the required package:
-   pip install pyperclip
+    ```bash
+    pip install pyperclip
 
 ### Alternative: Using Homebrew Python (macOS)
+    ```bash
+    brew install python@3.12
+    python3.12 -m venv venv
+    source venv/bin/activate
+    pip install pyperclip
 
-brew install python@3.12
-python3.12 -m venv venv
-source venv/bin/activate
-pip install pyperclip
-
-## Running the Application
+### Running the Application
 
 With the virtual environment activated:
 
